@@ -11,9 +11,8 @@ pip install bcc
 
 start a small webserver 
 ```bash
-export URL=https://raw.githubusercontent.com/s1ntaxe770r/pong-server/master/main.go
-curl -o pong $URL\ 
-chmod +x pong && ./pong -port ":4040"
+curl -o main.go https://raw.githubusercontent.com/s1ntaxe770r/pong-server/master/main.go && go build -o pong main.go && chmod +x pong; ./pong -port ":4040"
+
 ```
 
 ## Without packetpass  
